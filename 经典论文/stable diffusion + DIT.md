@@ -22,5 +22,5 @@ inference的时候有多种采样器：DDPM ， DDIM ， Euler a （这部分还
 
 ### 1. 个人理解
 这个不就是最直观vit用到stable diffusion的方式？把 Latent 切成 Patch 直接扔进vit。
-甚至里面的控制方式都是类似stylegan的adain？
-不过感觉原文是class label，如果是长文本，应该还是cross attention更合适
+甚至里面的控制方式adaLN-zero都是类似stylegan的adain？
+不过感觉原文是class label用adaLN-zero，如果是长文本，应该还是cross attention更合适。
