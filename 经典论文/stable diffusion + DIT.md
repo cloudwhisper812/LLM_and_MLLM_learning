@@ -1,21 +1,16 @@
-# 图像与视频生成：从 Stable Diffusion 到 DiT
-
-> **学习目标**：掌握扩散模型从 Pixel Space 到 Latent Space 的跨越，理解 Transformer 如何取代 U-Net 成为新一代生成底座。
-
----
-
-## Ⅰ. Stable Diffusion (LDM 架构)
+##  Stable Diffusion
 
 ### 1. Latent Diffusion Model (LDM)
-* **核心痛点**：传统的 Diffusion（如 DDPM）在像素空间计算，分辨率越高，计算量呈平方级增长。
-* **解决方案**：引入 **VAE (Variational Autoencoder)**。
-    * **Encoder**：将图像从 $512 \times 512 \times 3$ 压缩到 $64 \times 64 \times 4$ 的隐空间（Latent Space）。
-    * **Decoder**：将去噪后的 Latent 还原回像素图像。
-* **面试考点**：为什么不在 Pixel Space 练？答：节省计算资源，同时 Latent 表达了更高层的语义，去噪更高效。
+引入 **VAE (Variational Autoencoder)**：
+* **Encoder**：将图像从 $512 x 512 x 3 压缩到 64 x 64 x 4 的隐空间（Latent Space）。
+* **Decoder**：将去噪后的 Latent 还原回像素图像。
+
+### 2. 训练流程
+step1. text-image pair, 图片用encoder压缩成feature $z_0$  
+step2. 对不停加噪声
 
 
-
-### 2. U-Net 与 Cross-Attention
+U-Net 与 Cross-Attention
 * **U-Net 角色**：作为噪声预测器（Noise Predictor），输入带噪 Latent $z_t$ 和步数 $t$，输出预测噪声 $\epsilon$。
 * **Attention 机制**：
     * **Self-Attention**：用于建模图像内部的全局空间关系。
