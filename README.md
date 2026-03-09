@@ -1,5 +1,9 @@
 # LLM/MLLM learning笔记
 
+[![Commit Activity (week)](https://img.shields.io/github/commit-activity/w/cloudwhisper812/LLM-MLLM-learning/main?label=commits%2Fweek)](https://github.com/cloudwhisper812/LLM-MLLM-learning)
+[![Commit Activity (month)](https://img.shields.io/github/commit-activity/m/cloudwhisper812/LLM-MLLM-learning/main?label=commits%2Fmonth)](https://github.com/cloudwhisper812/LLM-MLLM-learning)
+
+
 目前笔记主要分为三块：**个人总结**、**基础知识**（和**经典论文**（后续计划增加大模型 coding 部分）。学习方式主要是看论文 + 和大模型交互问答，以个人理解为主，不拘泥于公式推导，旨在遗忘时能快速召回、温故知新。
 
 
