@@ -27,14 +27,14 @@
 | [05. MoE](基础知识/07.%20MoE.md) | Router, Experts, Load Balancing, Top-K, Expert Capacity |
 | [06. optimizer](基础知识/08.%20optimizer.md) | Momentum, adaptive learning rate, adam, adamW |
 | [07. KV cache](基础知识/09.%20kv%20cache.md) | 显存计算, MHA/MQA/GQA, PagedAttention |
-| [08. Flash Attention](基础知识/10.%20flash%20attention.md) | 切块, Memory bandwidth, Online softmax |
+| [08. Flash Attention](基础知识/10.%20flash%20attention.md) | IO bound 问题, 块化到 SRAM, online softmax |
 | [09. LoRA](基础知识/11.%20LoRA.md) | Low-rank adaptation, 参数高效微调 |
-| [10. RAG](基础知识/12.%20RAG.md) | 检索增强生成, 向量检索, 召回与重排 |
+| [10. RAG](基础知识/12.%20RAG.md) | 幻觉与时效性, chunking→embedding→索引→ANN+重排→生成 |
 | [11. decoding strategy](基础知识/13.%20decoding%20strategy.md) | Greedy, Beam Search, Sampling, Top-k/top-p, Temperature |
-| [12. tokenizer](基础知识/14.%20tokenizer.md) | BPE, WordPiece, SentencePiece, 特殊 token 处理 |
-| [13. quantization](基础知识/15.%20quantization.md) | PTQ/QAT, INT8/INT4, 误差与部署 |
+| [12. tokenizer](基础知识/14.%20tokenizer.md) | subword 动机, BPE 工作机制, special tokens 与 embedding |
+| [13. quantization](基础知识/15.%20quantization.md) | NF4, QLoRA, GPTQ/AWQ 等主流量化方案 |
 | [14. Distributed Training](基础知识/16.%20Distributed%20Training.md) | 数据并行/张量并行/流水线并行, 通信与显存 |
-| [15. RL](基础知识/17.%20RL.md) | RLHF/RLAIF, PPO/DPO 等相关概念 |
+| [15. RL](基础知识/17.%20RL.md) | 大模型对齐中的 PPO, DPO, GRPO |
 
 ---
 
