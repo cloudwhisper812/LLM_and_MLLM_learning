@@ -75,8 +75,7 @@
 数据：
 - 数亿级别的弱相关图文对（Image-Caption pairs，如 LAION, CC3M）。数据往往较短、较嘈杂。主要是海量的 Web-derived Image-Text Pairs（网络爬取图文对）
 - 数据清晰：图文匹配度过滤 (CLIP Score Filtering)。视觉质量与分辨率卡控，去掉低质量和奇怪长宽比。水印和OCR过滤，跑一遍轻量级的 OCR 模型计算文本框面积占比。如果图片上密密麻麻全是字，或者特定区域有高频出现的水印模式，直接过滤。
-- 
-
+  
 训练：
 - 只训练Projector。
 - loss在所有text caption token上。
