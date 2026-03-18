@@ -49,7 +49,7 @@
 | [AWQ(Activation-aware Weight Quantization)](经典论文/AWQ(Activation-aware%20Weight%20Quantization).md) | Activation-aware Weight Quantization |
 | [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](经典论文/Scaling%20LLM%20Test-Time%20Compute%20Optimally%20can%20be%20More%20Effective%20than%20Scaling%20Model%20Parameters.md) |Test-Time Scaling|
 
-### **MLLM Papers**
+### **MLLM / CV Papers**
 | 主题 | 内容 |
 |------|------|
 | [Janus and Janus-Pro](经典论文/Janus%20%20and%20Janus-Pro.md) | 视觉理解/生成双编码器解耦 + 统一 LLM 融合（SigLIP + VQ Tokenizer） |
