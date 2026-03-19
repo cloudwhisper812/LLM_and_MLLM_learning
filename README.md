@@ -14,6 +14,7 @@
 | [01. LLM模型架构与训练范式总结](个人总结/LLM模型架构与训练范式总结.md) | Encoder-only (BERT, BGE), Encoder-Decoder (T5, BART, UL2), Decoder-only (GPT, Llama) |
 | [02. MLLM架构](个人总结/MLLM架构(LLaVA,%20BLIP,%20Flamingo,%20end2end).md) | LLaVA, BLIP (Q-Former, CapFilt), Flamingo (Perceiver, interleaved) |
 | [03. LLM/MLLM数据收集和训练流程总结](个人总结/LLM_MLLM数据收集和训练流程.md) | LLM/MLLM Data Collection and Training Pipeline |
+| [04. LLM_MLLM评估](个人总结/LLM_MLLM评估.md) | MMMU, MMBench, DocVQA, POPE, ScreenQA |
 
 ---
 
