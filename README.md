@@ -53,6 +53,7 @@
 | [AWQ + Smoothquant](经典论文/AWQ%20+%20Smoothquant.md) | Activation-aware Weight Quantization + Smoothquant |
 | [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](经典论文/Scaling%20LLM%20Test-Time%20Compute%20Optimally%20can%20be%20More%20Effective%20than%20Scaling%20Model%20Parameters.md) |Test-Time Scaling|
 | [Qwen2.5](经典论文/Qwen2.5.md) | Core technical points, pre-training, post-training (SFT, DPO, GRPO), and model variants |
+| [Qwen3](经典论文/Qwen3.md) | Pre-training (PDF parsing, instance-level data labeling), Post-training (switchable think mode, Long-CoT SFT, Reasoning RL, Thinking Mode Fusion SFT, General RL), Small model distillation |
 
 ### **MLLM / CV Papers**
 | 主题 | 内容 |
