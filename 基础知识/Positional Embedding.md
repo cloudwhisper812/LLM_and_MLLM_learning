@@ -42,8 +42,8 @@ q_{m,2i+1}
     * **ABF (Adjusted Base Frequency)**
       * 为了让模型支持长文本，最暴力的思路是直接用 32K 的文本从头训，但这太费算力。先短后长，ABF（调整基频，也叫 RoPE Base Scaling）提供了一种方案。
       * ABF 的核心操作：放大基频 $`b`$。将基频 $`b`$ 从默认的 $`10000`$ 放大到 $`1,000,000`$（甚至 Qwen-Turbo 用的 $`10,000,000`$）。看回公式：$`\theta_i' = (b')^{-2i/d}`$。当 $`b'`$ 变大时，整体的 $`\theta_i`$ 会被压缩变小。
-    * **NTK aware**：动态缩放基频。对高频区间影响比较小。中频可能会越界。
-    * **YaRN (Yet another RoPE extensioN)**：改进ntk，高频区不动，低频去使用简单线性插值，中频区平滑（解决越界）。**同时加入温度参数，解决长文本下注意力过度分散的问题**。
+    * **NTK aware**：动态缩放基频。对高频区间影响比较小，主要影响低频，中频可能会越界。
+    * **YaRN (Yet another RoPE extensioN)**：改进ntk，高频区不动，低频区去使用简单线性插值，中频区平滑（解决越界）。**同时加入温度参数，解决长文本下注意力过度分散的问题**。
     * 总结：ABF需要train，ntk可以直接zero shot infer，yarn可以zero shot（效果比ntk好）但是如果finetune一下效果达到sota。
 * **3D RoPE（后面看一下）**
 
