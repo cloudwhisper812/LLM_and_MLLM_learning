@@ -45,7 +45,7 @@ q_{m,2i+1}
     * **NTK aware**：动态缩放基频。对高频区间影响比较小，主要影响低频，中频可能会越界。
     * **YaRN (Yet another RoPE extensioN)**：改进ntk，高频区不动，低频区去使用简单线性插值，中频区平滑（解决越界）。**同时加入温度参数，解决长文本下注意力过度分散的问题**。
     * 总结：ABF需要train，ntk可以直接zero shot infer，yarn可以zero shot（效果比ntk好）但是如果finetune一下效果达到sota。
-* **3D RoPE（后面看一下）**
+* **3D RoPE**：其实就是qwen里面的m rope，这里有在qwen的总结md里面有展开讲。
 
 #### 2.2 Alibi
 - 直接对attention map上的attention score 减去一个线性偏置。相对距离。距离越远，减得越多。
