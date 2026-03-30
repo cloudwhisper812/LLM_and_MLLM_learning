@@ -3,8 +3,9 @@
 
 ### 1. 绝对位置编码
 #### 1.1 Sinusoidal PE （Attention Is All You Need 原文）
-- sin，cos function，变量是pos index，以及每个token中单个数值的index
-- 可以外推(Extrapolation)，但是效果一般
+- PE_pos_2i = sin(pos/ (1000**(2i/d_model))). PE_pos_2i+1 = cos(pos/ (1000**(2i/d_model)))
+- 可以外推(Extrapolation)，但是效果一般。
+- 没有平移不变性(translation invariance)
 #### 1.2 Learnable PE （BERT, GPT-2, ViT）
 - 在固定长度任务上表现好，比如原始vit的输入图像尺寸固定。完全没法外推
 
