@@ -47,7 +47,7 @@ q_{m,2i+1}
     * 总结：ABF需要train，ntk可以直接zero shot infer，yarn可以zero shot（效果比ntk好）但是如果finetune一下效果达到sota。
 * **3D RoPE**：其实就是qwen里面的m rope，这里有在qwen的总结md里面有展开讲。
 
-#### 2.2 Alibi
+#### 2.2 Alibi (边缘化不太用了)
 - 直接对attention map上的attention score 减去一个线性偏置。相对距离。距离越远，减得越多。
 - 无限外推。适合超长序列
 - 为了让模型能关注不同范围的上下文，ALiBi 给每个 Head 分配了不同的斜率 m（乘法力度，线性偏置的权重。）
